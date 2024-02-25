@@ -42,7 +42,7 @@ const SideMenu = ({
           />
         </div>
         <div className="flex flex-col items-center">
-          <p className="text-primary font-bold text-xl">Employabol</p>
+          <p className="text-primary font-bold text-xl">Employable</p>
           <OptionButton
             options={[1, 2, 3, 4, 5]}
             setPressed={setIncomeRanking}

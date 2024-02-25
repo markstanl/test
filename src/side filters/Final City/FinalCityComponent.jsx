@@ -18,24 +18,7 @@ const FinalCityComponent = ({
           <img src={cityImage} alt="city" className="w-[90%]" />
           <p className="text-text text-sm pt-4">{cityDescription}</p>
         </div>
-        <div className="flex flex-row w-full justify-around">
-          <div
-            className=" text-background border-text h-10 w-10 rounded-md flex items-center justify-center text-xl font-bold cursor-pointer"
-            onMouseEnter={() => setHover(0)}
-            onMouseLeave={() => setHover(null)}
-            style={{ backgroundColor: hover === 0 ? "#F2F2F2" : "white" }}
-          >
-            {"<"}
-          </div>
-          <div
-            className=" text-background border-text h-10 w-10 rounded-md flex items-center justify-center text-xl font-bold cursor-pointer"
-            onMouseEnter={() => setHover(1)}
-            onMouseLeave={() => setHover(null)}
-            style={{ backgroundColor: hover === 1 ? "#F2F2F2" : "white" }}
-          >
-            {">"}
-          </div>
-        </div>
+        <div className="flex flex-row w-full justify-around"></div>
         <div
           className="w-full h-16 flex reset-button-container mb-10"
           onClick={() => {
