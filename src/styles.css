@@ -1,0 +1,44 @@
+/* styles.css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.header {
+    @apply flex justify-between items-center sm:px-16 px-8 py-4 w-full mx-auto absolute top-0 z-10 right-0 left-0;
+  }
+
+.primary-accent-text-gradient{
+  @apply bg-gradient-to-r from-primary to-accent inline-block text-transparent bg-clip-text;
+}
+
+.secondary-primary-gradient{
+  @apply bg-gradient-to-r from-secondary to-primary;
+}
+
+h1{
+  @apply text-4xl font-bold;
+}
+
+.button-container{
+  @apply  border-2 border-accent rounded-lg flex flex-row justify-center bg-accent cursor-pointer;
+  
+}
+
+.submit-button-container{
+  @apply  border-2  rounded-lg flex flex-row justify-center cursor-pointer;
+}
+
+
+.reset-button-container{
+  @apply  border-2 border-secondary rounded-lg flex flex-row justify-center items-center bg-text cursor-pointer text-3xl text-background font-bold;
+}
+
+.input-container{
+  @apply  border-2 border-accent rounded-lg flex flex-row justify-center bg-text cursor-pointer;
+}
